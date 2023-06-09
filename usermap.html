@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Εξομοίωση χρήστη</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+            crossorigin=""></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="userstyle.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script src="usermap.js"></script>
+<!-- <script src="../leaflet-search-master/src/leaflet-search.js"></script>
+<link rel="stylesheet" href="../leaflet-search-master/src/leaflet-search.css" />
+-->
+
+<div id="container-main">
+    <!--<div id="header-main"> </div>-->
+    <div class="availability">
+        <a href="welcome.html"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+        <h4> Δείτε διαθεσιμότητα για διαφορετική ώρα</h4>
+        <form id="sim-form">
+            <input id="input-hour" name="inputhour" type="time"/>
+            <button id="avail" type="button" onclick="availability()"> Δείτε Διαθεσιμότητα </button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <div id="find-park">
+            <h4> Βρείτε Θέση </h4>
+            <form id="find-form">
+                <label for="hour" id="hour"> Ώρα </label> <input id="hour" name="i-hour" type="time" required />
+                <br><br>
+                <label for="distance" id="dist"> Μέγιστη απόσταση (μέτρα) </label> <input id="distance" name="i-distance" type="number" min=0 />
+                <br><br>
+                <button id="avail2" type="submit"> Βρείτε Θέση </button>
+            </form>
+        </div>
+    </div>
+    <div id="mapid">
+        <div id="loader" class="d-flex justify-content-center text-center">
+            <div class="spinner-border text-primary" role="status"></div>
+        </div>
+    </div>
+
+</body>
+</html>

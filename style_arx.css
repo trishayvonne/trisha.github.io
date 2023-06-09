@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto Slab', serif;
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)),url(images/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	background-color: #5D4954;
+}
+
+.logo{
+	font-size: 3rem;
+	font-weight: 300;
+	color: #eee;
+	letter-spacing: 5px;
+}
+
+.logo span{
+	color: crimson;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 20%;
+	padding-top: 20px;
+	font-size: 1.2rem;
+}
+
+.nav-links li{
+	list-style: none;
+
+
+}
+
+.nav-links a{
+	color: rgb(226,226,226);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+
+
+}
+
+.bar{
+	display: none;
+	cursor: pointer;
+	background-color: #5D4954 ;
+}
+
+.bar div{
+	width: 25px;
+	height: 3px;
+	background-color: #eee;
+	margin: 5px;
+	transition: all 0.3s ease;
+}
+
+.box
+{
+	position: relative;
+	width: 20%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 15%;
+	left: 15%;
+
+
+}
+
+.content
+{
+	color: #eee;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	letter-spacing: 0.5px;
+	font-size: 1.3rem;
+}
+
+.content span
+{
+	color: crimson;
+}
+
+.btn a
+{
+
+	position: absolute;
+	padding: 15px 30px;
+	color: crimson;
+	/*text-transform: uppercase;*/
+	letter-spacing: 2px;
+	text-decoration:none;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2s;
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	left: 15%;
+	top: 70%;
+
+}
+
+.btn a:hover
+{
+	color: white;;
+	background: crimson;
+	box-shadow: 0 0 10px crimson, 0 0 40px crimson, 0 0 80px crimson;
+}
+
+
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+
+	}
+
+
+	.box
+	{
+		position: absolute;
+		width: 50%;
+		height: 30%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 35%;
+		left: 15%;
+	}
+
+	.content
+	{
+		color: #eee;
+		font-family: 'Roboto Slab', serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+}

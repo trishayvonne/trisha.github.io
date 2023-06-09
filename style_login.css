@@ -1,0 +1,119 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)),url(images/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+
+}
+
+.logo{
+	font-size: 3rem;
+	font-weight: bold;
+	color: #eee;
+	letter-spacing: 5px;
+	margin-top: 1%;
+	font-family: 'Roboto Slab', serif;
+}
+
+.logo span{
+	color: crimson;
+}
+.loginBox
+{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 420px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background:  rgba(0,0,0,.5);
+
+}
+
+h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+}
+
+.loginBox p
+{
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 2px;
+}
+
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginBox input[type="username"], .loginBox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Roboto Slab', serif;
+	letter-spacing: 2px;
+
+}
+
+.loginBox button[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: rgb(255,38,126);
+	cursor: pointer;
+	border-radius: 40%;
+	font-family: 'Roboto Slab', serif;
+	width: 100%;
+	margin-top: 5%;
+	letter-spacing: 2px;
+}
+
+
+::placeholder
+{
+	color: rgba(255,255,255,0.5);
+}
+
+.user
+{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left:calc(50% - 50px);
+	border-radius: 50%;
+}	
+
+

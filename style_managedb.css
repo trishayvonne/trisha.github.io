@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5)),url(images/park.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	background-color: #5D4954;
+}
+
+.logo{
+	font-size: 3rem;
+	font-weight: 300;
+	color: #eee;
+	letter-spacing: 5px;
+}
+
+.logo span{
+	color: crimson;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	padding-top: 20px;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a{
+	color: rgb(226,226,226);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 1.2rem;
+
+
+}
+
+.nav-links .current
+{
+	background-color: crimson;
+	border-radius: 4px;
+}
+
+.nav-links .other
+{
+	opacity: 0.6;
+}
+
+
+
+
+
+
+
+.container
+{
+	position: relative;
+	width: 800px;
+	height: 300px;
+	margin: 240px auto;
+	bottom: 20%;
+
+}
+
+.container .box
+{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.5));
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 20%;
+
+}
+
+#loader
+{
+	top:10%;
+}
+
+.container .box .icon .fa
+{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%,50%);
+	font-size: 50px;
+	transition: 0.5s;
+	color: #fff;
+
+}
+
+.container .box .information2
+{
+	color: #fff;
+	font-size: 10px;
+	position: absolute;
+	bottom: 50%;
+	font-family: sans-serif;
+	left: 45px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.container .box .information1
+{
+	color: #fff;
+	font-size: 10px;
+	position: absolute;
+	bottom: 50%;
+	font-family: sans-serif;
+	left: 120px;
+	font-family: 'Roboto Slab', serif;
+}
+
+/* I have added #bt-file, #bt-hid for the 2 buttons and .information3 for the part that shows the file uploaded correctly */
+#bt, #bt-file
+{
+	width: 70%;
+	height: 50px;
+	position: absolute;
+	top: 65%;
+	left: 15%;
+	right: 15%;
+	cursor: pointer;
+}
+
+#file, #bt-hid
+{
+	display: none;
+}
+
+.information3
+{
+	color: white;
+	font-size: 10px;
+	position: absolute;
+	display: inline-block;
+	background-color: transparent;
+	bottom: 2%;
+	width: 70%;
+	left: 15%;
+	right: 15%;
+	border: none;
+	padding: 10px 26px;
+	text-decoration: none;
+	margin: 4px 2px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+}
+
+#loader {
+	width: 50%;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	right: 25%;
+	color: white;
+	text-align: center;
+}
